@@ -33,16 +33,17 @@
             this.lblAlmt = new System.Windows.Forms.Label();
             this.lblKelas = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbJurusan = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.rbLaki = new System.Windows.Forms.RadioButton();
             this.lblJK = new System.Windows.Forms.Label();
             this.rbPerempuan = new System.Windows.Forms.RadioButton();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNma
@@ -88,21 +89,35 @@
             this.textBox1.Size = new System.Drawing.Size(207, 26);
             this.textBox1.TabIndex = 4;
             // 
-            // comboBox1
+            // cmbJurusan
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "RPL",
-            "AKL",
-            "TKKR",
-            "Perhotelan",
-            "Kimia",
-            "DPB",
-            "ULW"});
-            this.comboBox1.Location = new System.Drawing.Point(164, 96);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 28);
-            this.comboBox1.TabIndex = 5;
+            this.cmbJurusan.FormattingEnabled = true;
+            this.cmbJurusan.Items.AddRange(new object[] {
+            "X RPL",
+            "XI RPL",
+            "XII RPL",
+            "X AKL",
+            "XI AKL",
+            "XII AKL",
+            "X TKKR",
+            "XI TKKR",
+            "XII TKKR",
+            "X Perhotelan",
+            "XI Perhotelan",
+            "XII Perhotelan",
+            "X Kimia",
+            "XI Kimia",
+            "XII Kimia",
+            "X DPB",
+            "XI DPB",
+            "XII DPB",
+            "X ULW",
+            "XI ULW",
+            "XII ULW"});
+            this.cmbJurusan.Location = new System.Drawing.Point(164, 96);
+            this.cmbJurusan.Name = "cmbJurusan";
+            this.cmbJurusan.Size = new System.Drawing.Size(207, 28);
+            this.cmbJurusan.TabIndex = 5;
             // 
             // textBox2
             // 
@@ -117,15 +132,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(207, 26);
             this.textBox3.TabIndex = 7;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(26, 428);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(886, 114);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // btnSimpan
             // 
@@ -185,21 +191,31 @@
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 417);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(863, 141);
+            this.dataGridView1.TabIndex = 17;
+            // 
             // Siswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 579);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.rbPerempuan);
             this.Controls.Add(this.lblJK);
             this.Controls.Add(this.rbLaki);
             this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbJurusan);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblKelas);
             this.Controls.Add(this.lblAlmt);
@@ -207,6 +223,7 @@
             this.Controls.Add(this.lblNma);
             this.Name = "Siswa";
             this.Text = "Siswa";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,15 +236,15 @@
         private System.Windows.Forms.Label lblAlmt;
         private System.Windows.Forms.Label lblKelas;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbJurusan;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.RadioButton rbLaki;
         private System.Windows.Forms.Label lblJK;
         private System.Windows.Forms.RadioButton rbPerempuan;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
