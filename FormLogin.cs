@@ -42,7 +42,7 @@ namespace LatihanGithub
                     // Contoh: buka form utama setelah login
                     FormMenu formLogin = new FormMenu();
                     formLogin.Show();
-                    this.Hide(); // sembunyikan form login
+                    this.Hide(); // sembunyikan form loginn
                 }
                 else
                 {
