@@ -33,7 +33,6 @@
             this.txtuser = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbluser
@@ -61,7 +60,6 @@
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(401, 31);
             this.txtuser.TabIndex = 2;
-            this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             // 
             // txtpass
             // 
@@ -78,24 +76,12 @@
             this.btnlogin.TabIndex = 4;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = true;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
-            // 
-            // btncancel
-            // 
-            this.btncancel.Location = new System.Drawing.Point(502, 296);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(138, 57);
-            this.btncancel.TabIndex = 5;
-            this.btncancel.Text = "cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 693);
-            this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
@@ -103,7 +89,6 @@
             this.Controls.Add(this.lbluser);
             this.Name = "FormLogin";
             this.Text = "FormLogin";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +101,6 @@
         private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.Button btncancel;
     }
 }
 

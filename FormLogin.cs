@@ -12,7 +12,6 @@ namespace LatihanGithub
 {
     public partial class FormLogin : Form
     {
-
         public FormLogin()
         {
             InitializeComponent();
@@ -20,19 +19,6 @@ namespace LatihanGithub
 
         private void label1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnlogin_Click(object sender, EventArgs e)
-        {
-            {
-                string username = txtuser.Text;
-                string password = txtpass.Text;
 
                 // Contoh login sederhana (hardcode)
                 if (username == "admin" && password == "123")
@@ -42,7 +28,7 @@ namespace LatihanGithub
                     // Contoh: buka form utama setelah login
                     FormMenu formLogin = new FormMenu();
                     formLogin.Show();
-                    this.Hide(); // sembunyikan form loginn
+                    this.Hide(); // sembunyikan form login
                 }
                 else
                 {
