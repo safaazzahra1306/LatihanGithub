@@ -21,7 +21,6 @@ namespace LatihanGithub
         {
 
         }
-<<<<<<< HEAD
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
@@ -64,7 +63,6 @@ namespace LatihanGithub
             txtpass.Clear();
             txtuser.Focus();
         }
-=======
->>>>>>> parent of 059eecf (kode from login)
+
     }
 }
