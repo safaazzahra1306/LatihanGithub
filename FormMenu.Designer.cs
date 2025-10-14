@@ -53,12 +53,14 @@
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // siswaToolStripMenuItem
             // 
             this.siswaToolStripMenuItem.Name = "siswaToolStripMenuItem";
             this.siswaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.siswaToolStripMenuItem.Text = "Siswa";
+            this.siswaToolStripMenuItem.Click += new System.EventHandler(this.siswaToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
