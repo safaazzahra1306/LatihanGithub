@@ -41,7 +41,7 @@ namespace LatihanGithub
                     // Contoh: buka form utama setelah login
                     FormMenu formLogin = new FormMenu();
                     formLogin.Show();
-                    this.Hide(); // sembunyikan form loginn
+                    //this.Hide(); // sembunyikan form loginn
                 }
                 else
                 {
@@ -64,5 +64,9 @@ namespace LatihanGithub
             txtuser.Focus();
         }
 
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
