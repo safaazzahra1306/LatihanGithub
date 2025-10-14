@@ -24,7 +24,7 @@ namespace LatihanGithub
 
         private void siswaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLogin f = new FormLogin();
+            Siswa f = new Siswa();
             f.ShowDialog();
             this.Hide();
         }
