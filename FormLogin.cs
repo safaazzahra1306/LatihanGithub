@@ -29,6 +29,22 @@ namespace LatihanGithub
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void txtuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
             {
                 string username = txtuser.Text;
                 string password = txtpass.Text;
@@ -51,21 +67,11 @@ namespace LatihanGithub
             }
         }
 
-        private void txtuser_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btncancel_Click(object sender, EventArgs e)
-        {
-            // Bersihkan input
             txtuser.Clear();
             txtpass.Clear();
             txtuser.Focus();
-        }
-
-        private void btnlogin_Click_1(object sender, EventArgs e)
-        {
 
         }
     }
