@@ -16,7 +16,7 @@ namespace LatihanGithub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Siswa());
+            Application.Run(new FormLogin());
         }
     }
 }
