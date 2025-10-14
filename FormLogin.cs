@@ -21,5 +21,58 @@ namespace LatihanGithub
         {
 
         }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txtuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
+            {
+                string username = txtuser.Text;
+                string password = txtpass.Text;
+
+                // Contoh login sederhana (hardcode)
+                if (username == "admin" && password == "123")
+                {
+                    MessageBox.Show("Login berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Contoh: buka form utama setelah login
+                    FormMenu formLogin = new FormMenu();
+                    formLogin.Show();
+                    //this.Hide(); // sembunyikan form loginn
+                }
+                else
+                {
+                    MessageBox.Show("Username atau password salah!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtuser.Focus();
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtuser.Clear();
+            txtpass.Clear();
+            txtuser.Focus();
+
+        }
     }
 }
